@@ -1,0 +1,39 @@
+:root{
+  --bg:#f7f7f8; --card:#ffffff; --accent:#2b7a78; --muted:#666; --maxw:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:var(--maxw);margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.header-inner{display:flex;align-items:center;gap:1rem;justify-content:space-between;padding:0.75rem 1rem}
+.logo{margin:0;font-size:1.125rem;color:var(--accent)}
+.nav a{margin-left:1rem;color:#333;text-decoration:none;font-size:0.95rem}
+.phone-cta{background:var(--accent);color:#fff;padding:0.5rem 0.8rem;border-radius:6px;text-decoration:none}
+.hero{padding:3rem 0;background:linear-gradient(90deg,#eef9f8 0%, #fff 100%)}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.hero-content{flex:1}
+.hero h2{margin:0 0 0.5rem;font-size:1.8rem}
+.hero p{margin:0 0 1rem;color:var(--muted)}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:8px;text-decoration:none}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.outline{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.card{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.about{padding:2rem 0}
+.contact{padding:2rem 0}
+.contact-form{display:grid;gap:0.6rem;max-width:520px}
+.contact-form label{display:block;font-size:0.9rem}
+.contact-form input,.contact-form textarea{width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:6px}
+.form-msg{margin-top:0.5rem;color:var(--accent)}
+.site-footer{padding:1rem 0;background:#fff;border-top:1px solid #eee;margin-top:2rem}
+
+/* small image placeholder */
+.hero-image{width:320px;height:200px;border-radius:8px;overflow:hidden}
+.hero-image img{width:100%;height:100%;object-fit:cover;display:block}
+.card-icon{width:56px;height:56px;display:block;margin-bottom:0.6rem}
+
+@media(max-width:800px){
+  .hero-inner{flex-direction:column}
+  .nav{display:none}
+  .header-inner{padding:0.6rem}
+}
